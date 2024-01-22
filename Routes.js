@@ -1,6 +1,6 @@
 const express=require('express')
 const route= express.Router()
-const bcrypt=require('bcrypt')
+const bcrypt=require('bcryptjs')
 const jwt=require('jsonwebtoken')
 const secretkey="7ken"
 const saltRound=10;
