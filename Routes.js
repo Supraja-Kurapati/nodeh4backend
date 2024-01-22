@@ -30,7 +30,7 @@ if(acc){
     const login=bcrypt.compareSync(data.password,acc.password)
 
 if(login){
-    const token=jwt.sign({user:data.email},secretkey,{expiresIn:'3d'})
+    const token=jwt.sign({user:data.email},secretkey,{expiresIn:'365d'})
     console.log(login,"Login");
     return res.send({msg:"Login successful!!"})
 }
